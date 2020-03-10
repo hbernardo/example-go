@@ -1,6 +1,8 @@
 [Codecov][1] Go Example
 =======================
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e3c6bd44a18b47c5bee82fda13c38281)](https://app.codacy.com/manual/hbernardo/example-go?utm_source=github.com&utm_medium=referral&utm_content=hbernardo/example-go&utm_campaign=Badge_Grade_Dashboard)
+
 This repository serves as an **example** on how to use [Codecov Global][4] for Go.
 
 > Note: use `-covermode=atomic` or `-covermode=count` to show how many times a statement was executed.
