@@ -1,23 +1,23 @@
 package example
 
-import "github.com/codecov/example-go/awesome"
+import "github.com/hbernardo/example-go/awesome"
 
 var result string
 
 func Setup() {
 
-    // Comment
+	// Comment
 
-    result = awesome.Smile()
+	result = awesome.Smile()
 
 }
 
 func GetResult() string {
 
-    /*
-    Comment
-    */
+	/*
+	   Comment
+	*/
 
-    return result
+	return result
 
 }
