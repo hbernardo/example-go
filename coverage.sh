@@ -25,7 +25,7 @@ if [[ $CODACY_TOKEN ]]; then
         if [ -f "$dir"/package.json ] && grep -q "\"test\"" "$dir"/package.json; then
             yarn --cwd "$dir" && rm -f "$dir"/.npmrc
             yarn --cwd "$dir" test -- --coverage --watchAll=false
-            bash codacy-coverage report -t "$CODACY_TOKEN" --commit-uuid "$(git rev-parse HEAD)" -l javascript -r "$dir"/coverage/lcov.info --prefix "$dir"/ --partial
+            bash codacy-coverage report -t "$CODACY_TOKEN" --commit-uuid "$(git rev-parse HEAD)" -r "$dir"/coverage/lcov.info --prefix "$dir"/ --partial
         fi
     done
 
